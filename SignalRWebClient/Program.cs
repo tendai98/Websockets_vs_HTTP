@@ -26,8 +26,8 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapHub<DataHub>("/time", options => {
-    //options.Transports = HttpTransportType.WebSockets;
-    options.Transports = HttpTransportType.ServerSentEvents;
+    options.Transports = HttpTransportType.WebSockets;
+    //options.Transports = HttpTransportType.ServerSentEvents;
     //options.Transports = HttpTransportType.LongPolling;
 });
 
